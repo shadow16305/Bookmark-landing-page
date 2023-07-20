@@ -1,0 +1,26 @@
+.tabs {
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+}
+
+.active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: #FA5959;
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
